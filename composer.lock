@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "393461cb4de959d8903a0fe917d4920c",
+    "content-hash": "1a85895b2785cd833878c333fcb58ad1",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1078,6 +1078,55 @@
                 "maxmind"
             ],
             "time": "2021-11-30T18:15:25+00:00"
+        },
+        {
+            "name": "grosv/laravel-passwordless-login",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grosv/laravel-passwordless-login.git",
+                "reference": "04f6211d974a8a276c042b124d48e79155ab168a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grosv/laravel-passwordless-login/zipball/04f6211d974a8a276c042b124d48e79155ab168a",
+                "reference": "04f6211d974a8a276c042b124d48e79155ab168a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": "Grosv\\LaravelPasswordlessLogin\\LaravelPasswordlessLoginProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Grosv\\LaravelPasswordlessLogin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Grosvenor",
+                    "email": "ed.grosvenor@wickedviral.com"
+                }
+            ],
+            "description": "Passwordless login using temporary signed URL",
+            "support": {
+                "issues": "https://github.com/grosv/laravel-passwordless-login/issues",
+                "source": "https://github.com/grosv/laravel-passwordless-login/tree/1.7.0"
+            },
+            "time": "2022-01-16T21:22:07+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -8046,5 +8095,5 @@
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.2.0"
 }

@@ -27,6 +27,11 @@
                                     @csrf
 
                                     <div class="form-group">
+                                        @if (Session::has('success'))
+                                            <div class="alert alert-success">
+                                                <a href="{{ Session::get('success') }}" target="_blank" class="btn btn-primary">Your Link</a>
+                                            </div>
+                                        @endif
                                         <label for="i-email">{{ __('Email address') }}</label>
                                         <input id="i-email" type="text" dir="ltr" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" autofocus>
                                         @if ($errors->has('email'))
@@ -65,8 +70,12 @@
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-block btn-primary py-2">
+                                    <button type="submit" name="submit" value="login" class="btn btn-block btn-primary py-2">
                                         {{ __('Login') }}
+                                    </button>
+
+                                    <button type="submit" name="submit" value="send-link" class="btn btn-block btn-success py-2">
+                                        Send link
                                     </button>
                                 </form>
                             </div>

@@ -17,6 +17,7 @@
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "geoip2/geoip2": "^2.12",
+        "grosv/laravel-passwordless-login": "^1.7",
         "io-developer/php-whois": "^4.1",
         "ivopetkov/html5-dom-document-php": "2.*",
         "laravel/framework": "^6.20.26",

@@ -53,7 +53,7 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            // 'password' => ['required', 'string', 'min:6', 'max:128', 'confirmed'],
+            'password' => ['required', 'string', 'min:6', 'max:128', 'confirmed'],
             'agreement' => ['required'],
             'g-recaptcha-response' => [(config('settings.captcha_registration') ? 'required' : 'sometimes'), 'captcha']
         ]);
@@ -73,7 +73,7 @@ class RegisterController extends Controller
 
             $user->name = $data['name'];
             $user->email = $data['email'];
-            //$user->password = Hash::make($data['password']);
+            $user->password = Hash::make($data['password']);
             $user->locale = app()->getLocale();
             $user->timezone = config('settings.timezone');
             $user->api_token = Str::random(60);
