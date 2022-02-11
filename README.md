@@ -1,4 +1,4 @@
-# ![Laravel PHP RANK]
+# Laravel PHP RANK
 
 [![Build Status](https://img.shields.io/travis/gothinkster/laravel-realworld-example-app/master.svg)](https://github.com/soufianeYM-eng) [![Gitter](https://img.shields.io/gitter/room/realworld-dev/laravel.svg)](https://github.com/soufianeYM-eng) [![GitHub stars](https://img.shields.io/github/stars/gothinkster/laravel-realworld-example-app.svg)](https://github.com/soufianeYM-eng) [![GitHub license](https://img.shields.io/github/license/gothinkster/laravel-realworld-example-app.svg)](https://github.com/soufianeYM-eng)
 
